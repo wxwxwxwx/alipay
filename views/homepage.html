@@ -1,0 +1,75 @@
+<div id="view" ng-controller="homepageCtrl">
+  <div class="homepage">
+    <section class="head">
+      <ul>
+        <li>
+          <div class="item item1">
+            <div class="img"></div>
+          </div>
+          <div class="text">扫一扫</div>
+        </li>
+        <li>
+          <div class="item item2">
+            <div class="img"></div>
+          </div>
+          <div class="text">付款</div>
+        </li>
+        <li>
+          <div class="item item3">
+            <div class="img"></div>
+          </div>
+          <div class="text">卡卷</div>
+        </li>
+        <li>
+          <div class="item item4">
+            <div class="img"></div>
+          </div>
+          <div class="text">咻一咻</div>
+        </li>
+      </ul>
+    </section>
+    <section class="content">
+      <div class="serve">
+        <ul>
+          <li class="item item1" ng-repeat="v in serve">
+            <div class="serve-icon">
+              <img src="{{v.image}}" alt="" style="width:{{v.width}};height:{{v.height}};margin-left:{{v.left}}" >
+            </div>
+            <div class="text">{{v.text}}</div>
+          </li>
+        </ul>
+
+      </div>
+      <section class="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/b1.jpg" alt="" style="width:6.40rem;height:1.40rem;"></div>
+            <div class="swiper-slide"><img src="images/b2.jpg" alt="" style="width:6.40rem;height:1.40rem;"></div>
+            <div class="swiper-slide"><img src="images/b3.jpg" alt="" style="width:6.40rem;height:1.40rem;"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          
+        </div>
+      </section>
+      <div class="serve serves">
+        <ul>
+          <li class="item item1" ng-repeat="v in serve1">
+            <div class="serve-icon">
+              <img src="{{v.image}}" alt="" style="width:{{v.width}};height:{{v.height}};margin-left:{{v.left}}" >
+            </div>
+            <div class="text">{{v.text}}</div>
+          </li>
+          <li>
+            <div class="more">
+              <img src="images/more.jpg" alt="" style="width:.46rem;height:.14rem">
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="side">
+
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="" id="view" ng-controller="friendCtrl">
+  <div id="friend">
+    <section class="life">
+      <div class="icon"><img src="images/life_03.jpg" alt="" style="width:.76rem;height:.74rem;margin-top:-.38rem;"></div>
+      <div class="text">生活圈</div>
+    </section>
+    <section class="content">
+      <ul>
+        <li ng-repeat="v in life">
+          <a href="#chat/{{$index}}">
+           <div class="icon"><img src="{{v.image}}" alt="" style="width:.68rem;height:.68rem"></div>
+          <div class="text">
+            <div class="item"><span class="name">{{v.name}}</span>
+            <span class="time">{{v.time}}</span></div>
+            <div class="item"><span class="info">{{v.info}}</span></div>
+          </div>
+        </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

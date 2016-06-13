@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="alipay">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="js/Swiper/dist/css/swiper.css" />
+
+
+  <link rel="stylesheet" href="css/index.css">
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- 360 浏览器就会在读取到这个标签后，立即切换对应的极速核 -->
+  <meta name="renderer" content="webkit">
+  <!-- 禁止百度转码 -->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 在 IE 禁用点击高亮显示 -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- 添加到主屏幕的Chrome浏览器在Android上 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- app 名称 -->
+  <meta name="application-name" content="tianmao app">
+  <!-- app 桌面图标 -->
+  <link rel="icon" sizes="192x192" href="images/icon-192.jpg">
+
+  <!-- 添加到主屏幕Safari在iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 状态栏 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 标题 -->
+  <meta name="apple-mobile-web-app-title" content="alipay app">
+  <!-- iOS 桌面图标 152*152 -->
+  <link rel="apple-touch-icon" href="images/icon-152.jpg">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/icon-144.jpg">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- 移动设备上的状态栏 -->
+  <meta name="theme-color" content="#2F3BA2">
+
+</head>
+<body ng-controller="mainC">
+  <uq-title></uq-title>
+  <ng-view></ng-view>
+  <uq-footer></uq-footer>
+
+</body>
+<script src="js/jquery/dist/jquery.js"></script>
+<script src="js/Swiper/dist/js/swiper.jquery.js"></script>
+<script src="js/angular/angular.js"></script>
+<script src="js/angular-animate/angular-animate.js"></script>
+<script src="js/angular-route/angular-route.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</html>

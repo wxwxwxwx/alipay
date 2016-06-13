@@ -1,0 +1,55 @@
+<div id="view" ng-controller="koubeiCtrl">
+  <section id="koubei">
+    <section class="bar">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul>
+                <li ng-repeat="v in ban1">
+                  <div class="icon"><img src="{{v.image}}" alt="" style="width:{{v.width}};height:{{v.height}};margin-top:{{v.top}};margin-left:{{v.left}}"></div>
+                  <div class="text">{{v.name}}</div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul>
+                <li ng-repeat="v in ban2">
+                  <div class="icon"><img src="{{v.image}}" alt="" style="width:{{v.width}};height:{{v.height}};margin-top:{{v.top}};margin-left:{{v.left}}"></div>
+                  <div class="text">{{v.name}}</div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="ban">
+      <ul>
+        <li ng-repeat="v in banner"><img src="{{v.image}}" alt="" style="width:{{v.width}};height:{{v.height}};"></li>
+      </ul>
+    </section>
+    <section class="hot">
+      <ul>
+        <li class="title">热门推荐</li>
+        <li ng-repeat="v in shop">
+          <div class="icon"><img src="{{v.image}}" alt=""></div>
+          <div class="text">
+            <div class="con">
+              <div class="name">{{v.name}}</div>
+              <div class="info">
+                <img src="{{v.x}}" alt="" style="width:1.02rem;height:.20rem">
+                <span class="x">{{v.xnum}}</span>
+                <span>{{v.money}}</span>
+                <span class="num">{{v.num}}</span>
+              </div>
+              <div class="dis"><span>{{v.dist1}}</span><span>{{v.dist2}}</span></div>
+            </div>
+
+            <div class="recom"><div class="img"><img src="./images/zan.jpg" alt="" style="width:.29rem;height:.30rem;"></div><div class="texts">{{v.recom}}</div></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
